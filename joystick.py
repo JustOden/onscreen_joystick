@@ -57,8 +57,8 @@ class Joystick:
         self.width = self.screen.get_width()
         self.height = self.screen.get_height()
         self.clock = pygame.time.Clock()
-        self.outer = pygame.image.load("../graphics/joystick_bg.png").convert_alpha()
-        self.inner = pygame.image.load("../graphics/joystick.png").convert_alpha()
+        self.outer = pygame.image.load("joystick_bg.png").convert_alpha()
+        self.inner = pygame.image.load("joystick.png").convert_alpha()
         self.outer_rect = self.outer.get_rect(topleft=(0,0))
         self.inner_rect = self.inner.get_rect(center=self.outer_rect.center)
 
